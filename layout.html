@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>Template Layout</title>
+    <!-- meta is internal information -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: rgb(241, 144, 252);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+        }
+ 
+        nav{
+            width:30%;
+            height: 300px;
+        }
+        @media(max-width:600px){
+            nav,article{
+                width: 100%;
+                height:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Layout</h2>
+    <p>Test</p>
+    <header>
+        <h2>7 wonders of the World</h2>
+    </header>
+    <section>
+        <nav>
+        <ul>
+            <li>The Colosseum</li>
+            <li>The Great Wall of China</li>
+            <li>Chichén Itzá</li>
+            <li>Christ the Redeemer</li>
+            <li>Machu Picchu</li>
+            <li>The Taj Mahal</li>
+            <li>Petra</li>
+        </nav>
+        </ul>
+    </section>
+</body>
+</html>
