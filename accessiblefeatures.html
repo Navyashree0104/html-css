@@ -1,0 +1,89 @@
+<html lang="en">
+    <body>
+        <!--alt tag is very important accessible feature-->
+        <img src="chocolate.png" alt="It is a chocolate">
+    </body>
+</html><br>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Web Page</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Accessible Website</h1>
+    </header>
+
+    <!-- Navigation with Accessible Links -->
+    <nav>
+        <ul>
+            <li><a href="#" aria-label="Go to Home Page">Home</a></li>
+            <li><a href="#" aria-label="Learn more About Us">About</a></li>
+            <li><a href="#" aria-label="Contact Us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>About Accessibility</h2>
+            <p>Web accessibility ensures that websites are usable by people with disabilities.</p>
+        </section>
+
+        <!-- Image with alt text -->
+        <section>
+            <h2>Chocolate Image</h2>
+            <img src="images/chocolate.png" alt="A delicious chocolate bar with nuts" width="300">
+        </section>
+
+        <!-- Form with Labels and ARIA Attributes -->
+        <section>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" aria-required="true"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" aria-required="true"><br><br>
+
+                <button type="submit" aria-label="Submit Form">Submit</button>
+            </form>
+        </section>
+
+        <!-- Table with Proper Accessibility -->
+        <section>
+            <h2>Monthly Sales Report</h2>
+            <table border="1">
+                <caption>Sales Data for 2025</caption>
+                <tr>
+                    <th scope="col">Month</th>
+                    <th scope="col">Sales</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$5000</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$6200</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+
+        <button tabindex="0" aria-label="Close the Window" role="button">❌ Close</button>
+    </footer>
+
+</body>
+</html>
